@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.hed {
+background-color: #F5F5F6;
+height: 50px;
+display: flex;
+justify-content: space-between;
+width:100%;
+}
+.spisok {
+display: flex;
+justify-content: space-between;  
+
+}
+.p1 {
+padding-right: 20px;
+font-family: 'Roboto', sans-serif;
+color: #959BA4;
+}
+.logo {
+    padding-top: 15px;
+    padding-left: 86px;
+    cursor: pointer;
+}
+.enter {
+    padding-top: 8px;
+    padding-right: 105px;
+    
+}
+.btn1 {
+    width: 58px;
+    height: 33px;
+    background-color: white;
+    border: white;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 7px;
+}
+.photo1 {
+    width: 89px;
+    height: 23px;
+}
+.p1:hover{
+    color: black;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: #959BA4;
+    cursor: pointer;
+    color: white;
+}
