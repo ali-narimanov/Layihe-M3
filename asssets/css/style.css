@@ -75,11 +75,7 @@ padding-left: 80px;
     height: 102px;
     border-radius: 3px;
     border: solid #E5E5E5 1px;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
+   
     
 }
 .input2{
@@ -87,11 +83,8 @@ line-height: 42px;
     height: 102px;
     border-radius: 3px;
     border: solid #E5E5E5 1px; 
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
+    
+margin-left: 40px;
     
 }
 ul{
@@ -109,7 +102,9 @@ li {
     
 }
 .li-1 {
-    border: solid #E5E5E5 1px ;
+    border: solid #E5E5E5 1px;
+    background-color: #833AE0;
+    color: white;
     border-radius: 5px;
     width: 10px;
 height: 28px;
@@ -145,6 +140,7 @@ height: 28px;
     border-radius: 5px;
     width: 10px;
 height: 28px;
+
    
 }
 .li-6 {
@@ -152,6 +148,8 @@ height: 28px;
     border-radius: 5px;
     width: 10px;
 height: 28px;
+color: white;
+background-color: #833AE0;
 
    
 }
@@ -181,4 +179,53 @@ height: 28px;
 .li-style{
     background-color: #E5E5E5;
     color: black;
+}
+.text1{
+    color: #C6C6C6;
+    width: 250px;
+height: 28px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 14px;
+margin-bottom: 10px;
+height: 10px;
+
+
+}
+.text2{
+    color: #C6C6C6;
+    width: 250px;
+height: 28px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 14px;
+
+
+}
+.inp1{
+    border: white 0px;
+width: 98%;
+height: 60%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 32px;
+
+
+}
+.inp2{
+    border: white 0px;
+    min-width:98%;
+    height: 60%;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 32px;
+   
 }
