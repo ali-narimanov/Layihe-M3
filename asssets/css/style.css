@@ -70,17 +70,28 @@ padding-left: 80px;
     
 }
 .input1 {
+    margin: auto;
     width: 300px;
     height: 102px;
     border-radius: 3px;
     border: solid #E5E5E5 1px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
     
 }
 .input2{
-    min-width: 300px;
-    min-height: 102px;
+    width: 300px;
+    height: 102px;
     border-radius: 3px;
     border: solid #E5E5E5 1px; 
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
     
 }
 ul{
