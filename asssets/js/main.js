@@ -6,7 +6,6 @@ const rubl1= document.getElementById('rubl1');
 const dollar1= document.getElementById('dollar1');
 const euro1 = document.getElementById('euro1');
 const funst1 = document.getElementById('funts1')
-
 let enterBtn = document.querySelector('.btn1');
 const input1 = document.getElementsByName('first-input')[0];
 const input2 = document.getElementsByName('second-input')[0];
@@ -35,69 +34,47 @@ rubl1.addEventListener("click",currencyChange);
 dollar1.addEventListener("click",currencyChange);
 euro1.addEventListener('click',currencyChange);
 funst1.addEventListener('click',currencyChange);
-
-
-
 const p1=document.querySelector('.text1');
 const p2 = document.querySelector('.text2');
-    
-
-
 let first;
 let second;
 input1.addEventListener('keypress',()=>{
    one.forEach(item=>{
     if(item.classList.contains('change')){
-        
         first = item.innerText
     }
    })
-
     two.forEach(item=>{
         if(item.classList.contains('change')){
-            
             second=item.innerText
         }
     });
-    
-    
     fetch(`https://api.exchangerate.host/latest?base=${first}&symbols=${second}`)
     .then(r=>r.json())
-    .then((data)=>{
-        
+    .then((data)=>{  
         input2.value=Number(input1.value)*data.rates[second];
         p1.innerText=`1 ${first} = ${data.rates[second]} ${second}`;
         p2.innerText=`1 ${second} = ${1/data.rates[second]} ${first}`;
-        
     })
 })
-
-
-
-
 input2.addEventListener('keypress',()=>{
     one.forEach(item=>{
-     if(item.classList.contains('change')){
-         
+     if(item.classList.contains('change')){ 
          first = item.innerText
      }
     })
- 
      two.forEach(item=>{
-         if(item.classList.contains('change')){
-             
+         if(item.classList.contains('change')){ 
              second=item.innerText
          }
      });
-     
-     
      fetch(`https://api.exchangerate.host/latest?base=${second}&symbols=${first}`)
      .then(r=>r.json())
      .then((data)=>{
-         
          input1.value=Number(input2.value)*data.rates[first];
          p1.innerText=`1 ${first} = ${1/data.rates[first]} ${second}`;
-         p2.innerText=`1 ${second} = ${data.rates[first]} ${first}`;
-         
+         p2.innerText=`1 ${second} = ${data.rates[first]} ${first}`; 
      })
  })
+
+ 
