@@ -52,7 +52,7 @@ input1.addEventListener('keypress',()=>{
     fetch(`https://api.exchangerate.host/latest?base=${first}&symbols=${second}`)
     .then(r=>r.json())
     .then((data)=>{  
-        input2.value=Number(input1.value)*data.rates[second];
+        input2.value=(Number(input1.value)*data.rates[second]).toFixed(3);
         p1.innerText=`1 ${first} = ${data.rates[second]} ${second}`;
         p2.innerText=`1 ${second} = ${1/data.rates[second]} ${first}`;
     })
@@ -71,7 +71,7 @@ input2.addEventListener('keypress',()=>{
      fetch(`https://api.exchangerate.host/latest?base=${second}&symbols=${first}`)
      .then(r=>r.json())
      .then((data)=>{
-         input1.value=Number(input2.value)*data.rates[first];
+         input1.value=(Number(input2.value)*data.rates[first]).toFixed(3);
          p1.innerText=`1 ${first} = ${1/data.rates[first]} ${second}`;
          p2.innerText=`1 ${second} = ${data.rates[first]} ${first}`; 
      })
